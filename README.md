@@ -1,6 +1,29 @@
 ## MegaCRN Results
 
-This repository contains a trained MegaCRN model and test results. The implementation is based on the AAAI 2023 paper “Spatio-Temporal Meta-Graph Learning for Traffic Forecasting”, with the following citation:
+This repository contains a trained MegaCRN model and test results. 
+
+### Implementation notes
+We use the publicly available MegaCRN (https://github.com/deepkashiwa20/MegaCRN) codebase as our training framework. No changes were made to model architectures, loss functions, or optimisation procedures. Pretrained checkpoints are hosted externally due to size constraints.
+
+### Repo structure
+
+
+### Environment
+- Python: 3.8.8
+- Device: NVIDIA GeForce GTX1060 3GB (Windows 11 Enterprise x64, Intel i7)
+- Conda environment: exported in `environment.yaml`
+- Python dependencies: listed in `requirements.txt`
+  
+### Results
+- early stopping at epoch 71
+
+| Benchmark| MAE | RMSE | MAPE |
+|-----------|-----------------------------|------------------------------|-------------------------------|
+| METR-LA   | 2.8982          |   6.0406        |  0.0791         |
+
+### Reference
+
+The implementation is based on the AAAI 2023 paper “Spatio-Temporal Meta-Graph Learning for Traffic Forecasting”, with the following citation:
 
 ```bibtex
 @inproceedings{jiang2023spatio,
@@ -13,22 +36,3 @@ This repository contains a trained MegaCRN model and test results. The implement
   year={2023}
 }
 ```
-
-### Implementation notes
-We use the publicly available MegaCRN (https://github.com/deepkashiwa20/MegaCRN) codebase as our training framework. No changes were made to model architectures, loss functions, or optimisation procedures. Pretrained checkpoints are hosted externally due to size constraints.
-
-### Repo structure
-
-
-### Environment
-- Python: 3.8.8
-- Device: NVIDIA GeForce GTX1060 3GB (Windows 11 Enterprise x64, Intel i7)
-- Conda environment: exported in `environment.yml`
-- Python dependencies: listed in `requirements.txt`
-  
-### Results
-
-| Benchmark| MAE | RMSE | MAPE |
-|-----------|-----------------------------|------------------------------|-------------------------------|
-| METR-LA   |           |           |           |
-| EXPY-TKY   |           |           |           |
