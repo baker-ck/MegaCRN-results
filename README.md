@@ -6,7 +6,7 @@ This repository contains a trained MegaCRN model and test results.
 We use the publicly available MegaCRN (https://github.com/deepkashiwa20/MegaCRN) codebase as our training framework. No changes were made to model architectures, loss functions, or optimisation procedures. Pretrained checkpoints are hosted externally due to size constraints.
 
 ### Repo structure
-
+Coming soon. 
 
 ### Environment
 - Python: 3.8.8
@@ -15,11 +15,32 @@ We use the publicly available MegaCRN (https://github.com/deepkashiwa20/MegaCRN)
 - Python dependencies: listed in `requirements.txt`
   
 ### Results
-- early stopping at epoch 71
+
+#### Model: MegaCRN (Jiang et al., 2023)
+- Dataset: PEMSBAY
+- Epochs/Run: 200
+- Patience: 10
+- Criterion: validation loss
+
+Early stopping reached at epoch 70.
+
+| Benchmark| MAE | RMSE | MAPE |
+|-----------|-----------------------------|------------------------------|-------------------------------|
+| METR-LA   | 1.5495          |   3.6234        |  0.0352         |
+
+#### Model: MegaCRN (Jiang et al., 2023)
+- Dataset: METR-LA
+- Epochs/Run: 200
+- Patience: 10
+- Criterion: validation loss
+
+Early stopping reached at epoch 71.
 
 | Benchmark| MAE | RMSE | MAPE |
 |-----------|-----------------------------|------------------------------|-------------------------------|
 | METR-LA   | 2.8982          |   6.0406        |  0.0791         |
+
+
 
 ### Reference
 
