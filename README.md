@@ -26,7 +26,7 @@ Early stopping reached at epoch 70.
 
 | Benchmark| MAE | RMSE | MAPE |
 |-----------|-----------------------------|------------------------------|-------------------------------|
-| METR-LA   | 1.5495          |   3.6234        |  0.0352         |
+| PEMSBAY  | 1.5495          |   3.6234        |  0.0352         |
 
 #### Model: MegaCRN (Jiang et al., 2023)
 - Dataset: METR-LA
